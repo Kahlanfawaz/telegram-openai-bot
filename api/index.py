@@ -13,6 +13,11 @@ TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 AI_MODEL = os.environ.get("AI_MODEL", "gpt-4.1-mini") 
 
 # 2. تهيئة البوت ونموذج AI
+
+# طباعة المتغيرات للتحقق من تحميلها بشكل صحيح
+print(f"TELEGRAM_BOT_TOKEN: {TELEGRAM_BOT_TOKEN}")
+print(f"AI_MODEL: {AI_MODEL}")
+print(f"OPENAI_API_KEY: {os.environ.get('OPENAI_API_KEY')}")
 bot = telebot.TeleBot(TELEGRAM_BOT_TOKEN, threaded=False) 
 client = OpenAI()
 app = Flask(__name__)
