@@ -10,7 +10,7 @@ import json
 # يفضل استخدام متغيرات البيئة في بيئة الإنتاج (Vercel)
 # سيتم استخدام المفاتيح الثابتة هنا لضمان عمل البوت مؤقتاً
 TELEGRAM_BOT_TOKEN = "8409006196:AAFziSkuWb-AA2yaXwYcHq6IUK30B5WilT0"
-AI_MODEL = os.environ.get("AI_MODEL", "gpt-4.1-mini") 
+AI_MODEL = os.environ.get("AI_MODEL", "gpt-3.5-turbo") 
 
 # 2. تهيئة البوت ونموذج AI
 # طباعة المتغيرات للتحقق من تحميلها بشكل صحيح
